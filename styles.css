@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;600;800&display=swap");
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  width: 100vw;
+
+  color: aquamarine;
+  background-color: black;
+}
+
+#content {
+  max-width: 1200px;
+  padding: 1em;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#result {
+  width: 100%;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search * {
+  font-size: 1.2rem;
+}
+
+#search button {
+  background-color: aquamarine;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#search input {
+  font-family: "Manrope", sans-serif;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 15px;
+  min-width: 400px;
+  height: 40px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+#price {
+  font-size: 1.5rem;
+}
