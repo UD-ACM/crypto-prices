@@ -1,59 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;600;800&display=swap");
 
 * {
-  font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif; /* set the font for all items in the HTML */
 }
 
-html {
-  width: 100vw;
+body {
+  /* Sets the color of the background to black and the text to a lighter color */
+  background-color: #292929;
+  color: #7af5ef;
 
-  color: aquamarine;
-  background-color: black;
+  /* Center the content on the screen */
+  display: flex; /* Uses Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+  flex-direction: column; /* Items should be arranged in a column */
+  align-items: center; /* Centers the items placed in the column */
 }
 
-#content {
-  max-width: 1200px;
-  padding: 1em;
-  margin: auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#result {
-  width: 100%;
-}
-
-#search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#search * {
-  font-size: 1.2rem;
-}
-
-#search button {
-  background-color: aquamarine;
-  color: black;
-  border: none;
-  border-radius: 15px;
-  padding: 10px;
-}
-
-#search input {
-  font-family: "Manrope", sans-serif;
-  background: none;
+/* When we use id="" in HTML, the CSS can refer to it using # */
+#crypto-name {
+  background-color: #292929;
   color: white;
-  border: 1px solid white;
+
+  font-size: 20px;
+
+  /* Padding alters the internal spacing between what's inside an element and the border */
+  padding: 0.5rem 1rem;
+  /* Adds a nice circular curve to the border instead of sharp corners */
   border-radius: 15px;
-  padding: 15px;
-  min-width: 400px;
-  height: 40px;
-  margin-right: 10px;
-  margin-bottom: 15px;
+}
+
+#check-price {
+  background-color: #7af5ef;
+  color: #292929;
+
+  font-size: 20px;
+
+  /* Margin also adds spacing, but the spacing is applied outside of the "border" of the element. 
+    We use it here to give some space between search bar and button */
+  margin-top: 15px;
+
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
 }
 
 #price {
